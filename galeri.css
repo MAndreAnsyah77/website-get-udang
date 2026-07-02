@@ -1,0 +1,125 @@
+.card-produk{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    transition: 0.3s cubic-bezier(0.4,0,0.2,1) !important;
+    margin-bottom: 30px;
+    padding: 20px;
+    
+}
+.card-produk img{
+     transition: 0.3s cubic-bezier(0.4,0,0.2,1) !important;
+}
+
+.card-produk img :hover {
+    transform: scale(1.8) !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4) !important;
+}
+.card-produk-modal{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    padding: 20px;
+    width: 1000px;
+    height: 800px;
+   
+    
+}
+
+
+.modal-backdrop.in {
+    opacity: 0.85;
+}
+
+.card-produk-modal {
+    margin: 30px auto;
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+.modal-body .btn {
+    margin-top: 18px;
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.mobile{
+     margin-top: 18px;
+}
+.page-header-custom {
+    background: #0d1e3f;
+    padding: 140px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header-custom::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0,184,169,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(244,167,66,0.08) 0%, transparent 40%);
+}
+
+.page-header-custom h1 {
+    font-family: 'Garamond', serif;
+    font-size: 56px;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header-custom p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 16px;
+    position: relative;
+    z-index: 1;
+    font-family: 'inter' sans-serif;
+}
+.atas1{
+    margin-top: 50px  
+}
+
+.atas{
+    margin-top: 100px  
+}
+
+
+
+@media (max-width: 767px) {
+    .card-produk-modal {
+        width: auto;
+        margin: 15px;
+    }
+
+    .modal-content {
+        border-radius: 14px;
+    }
+
+    .modal-body {
+        padding: 10px;
+    }
+
+    .modal-body img {
+        width: 100%;
+        max-height: 65vh;
+        border-radius: 8px;
+    }
+
+    .modal-body .btn {
+        width: 100%;
+        margin-top: 14px;
+        padding: 11px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,542 @@
+body {
+    background: white;
+}
+
+@media(max-width:767px) {
+    body {
+        padding-top: 80px;
+    }
+}
+.navbar {
+    margin-bottom: 0 !important;
+}
+ 
+.navbar-collapse {
+    margin-top: 20px;
+}
+
+.navbar-color {
+    background: #ffffff !important;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.051); 
+}
+
+.navbar-nav > .active > a {
+    background-color: #0d1e3f !important;
+    padding-left: 15px;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.hover-huruf > li > a {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    font-family: 'inter' sans-serif;
+}
+
+.hover-huruf > li > a:hover {
+    color: #ffffff;
+    background-color: #02b3ff;
+    transform: translateY(-6px);
+    border-radius:10px ;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    padding-top: 0 !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: rgb(65, 120, 150);
+}
+
+.navbar-header {
+    margin-top: 20px;
+}
+
+.navbar-brand img {
+    width: 290px;
+    margin-top: -55px;
+    margin-left: -70px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media(max-width:767px) {
+    .banner1 {
+        height: 400px;
+        min-height: 400px;
+        background-position: right center;
+        background-attachment: scroll;
+    }
+}
+
+.banner1 {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('images/udang baner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(10,22,40,0.88) 0%,
+        rgba(10,22,40,0.60) 50%,
+        rgba(0,184,169,0.25) 100%
+    );
+}
+
+.banner1-text {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+    font-family: 'inter' sans-serif;
+}
+
+.banner1-text h1 {
+    font-size: 86px;
+    font-weight: 550;
+    color: #0d1e3f;
+    line-height: 1.0;
+    margin-bottom: 24px;
+    font-family: 'inter' sans-serif;
+}
+
+.banner1-text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 40px;
+    font-family: 'inter' sans-serif;
+}
+
+.button-pesan {
+    display: inline-block;
+    background: #0d1e3f;
+    color: #ffffff !important;
+    font-family: 'inter' sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 4px 24px rgba(16, 26, 25, 0.4);
+}
+
+.button-pesan:hover {
+    background: #02b3ff; 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(11, 4, 209, 0.687);
+    text-decoration: none;
+}
+
+.card-produk-teks {
+    padding: 20px;
+    margin-top: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'inter' sans-serif;
+}
+
+.card-produk-teks p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-family: 'inter' sans-serif;
+}
+
+.card-produk-teks h2 {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    font-family: 'inter' sans-serif;
+}
+
+.card-produk-teks h4 {
+    line-height: 30px;
+}
+
+.card-produk-warp-kiri {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    margin-top: 80px;
+    margin-left: 5px;
+    transition: transform 0.6s ease;
+}
+
+.card-produk-warp-kiri:hover {
+    transform: scale(1.04);
+}
+
+.bagian {
+    margin-left: 30px;
+    padding: 60px 0;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bagian-judul {
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+    font-family: 'inter' sans-serif;
+}
+
+.bagian-judul::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #02b3ff; 
+}
+
+.img-card {
+    margin-bottom: 30px;
+    box-shadow: 0 8px 60px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-right: 30px;
+}
+
+.img-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.fasilitas-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fasilitas-list li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'inter' sans-serif;
+}
+
+.fasilitas-list li strong {
+    color: #02b3ff;
+}
+
+.kotak-organik {
+    background: #dff0d8;
+    border-left: 5px solid #3c763d;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.kotak-organik h3 {
+    color: #3c763d;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.banner2 {
+    background: #0d1e3f;
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+.strip {
+    width: 80px;
+    height: 4px;
+    background: #02b3ff;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.footer {
+    background: #0d1e3f;
+    color: rgba(255,255,255,0.7);
+    padding: 70px 0 30px;
+}
+
+.footer-brand {
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    max-width: 280px;
+    margin-bottom: 50px;
+}
+
+.footer-title {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #02b3ff;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.footer-links a:hover { 
+    color: rgb(255, 255, 255);
+    transform: translateY(-6px);
+
+}
+
+.footer-contact-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+}
+
+.banner3 {
+    position: relative;
+    min-height: 600px;
+    background-image: url('images/masakan udang 2.jpg');
+    background-size: cover;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  
+    background-repeat: no-repeat;
+    background-color: #0d1e3f;
+    background-position: center;
+}
+
+
+@media (max-width:767px){
+
+    html,
+    body{
+        overflow-x:hidden;
+       
+    }
+    .navbar-brand img{
+        width:180px;
+        margin-left:0;
+        margin-top:-20px;
+    }
+
+    .bagian{
+        margin-left:0;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .img-card{
+        margin-right:0;
+    }
+
+
+    .banner1-text{
+        left:15px;
+        right:15px;
+        max-width:100%;
+    }
+
+    .banner1-text h1{
+        font-size:42px;
+        line-height:0.95;
+        word-break:break-word;
+    }
+
+    .banner1-text p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .banner3 {
+        background-position: center bottom; 
+        padding-top: 40px; 
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 80vh; 
+    }
+}
+
+@font-face {             /*mamanggil font*/
+    font-family: 'inter';
+    src: url('fonts/static/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter';
+    src: url('fonts/static/Inter_18pt-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('fonts/static/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('fonts/static/EBGaramond-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    }
+
+
+
+@keyframes slideDownFade { /*animasi awal masuk*/
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.navbar {
+    opacity: 0; 
+    animation: slideDownFade 0.8s ease-out forwards;
+    animation-delay: 0.2s; 
+}
+.banner1-text h1, 
+.banner1-text p,
+.banner1-text .button-pesan,
+.banner1{
+    opacity: 0; 
+    animation-name: slideUpFade;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+}
+.banner1-text h1{
+    animation-delay: 0.4s; 
+}
+.banner1-text p{
+    animation-delay: 0.6s; 
+}
+.banner1-text .button-pesan{
+    animation-delay: 0.8s; 
+}
+.banner1{
+    animation-delay: 0.6s; 
+}
+
+.page-header-custom h1, 
+.page-header-custom p,
+.card img,
+.card-produk,
+.order-card,
+.feature-section img,
+.feature-section .section-label,
+.feature-section h2,
+.feature-section img,
+.feature-section .navbar-brand{
+    opacity: 0; 
+    animation-name: slideUpFade;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+}
+
+.page-header-custom h1{
+    animation-delay: 0.4s; 
+}
+.page-header-custom p{
+    animation-delay: 0.6s; 
+}
+.card img{
+    animation-delay: 0.8s; 
+}
+.card-produk{
+    animation-delay: 0.8s; 
+}
+.order-card{
+    animation-delay: 0.8s; 
+}

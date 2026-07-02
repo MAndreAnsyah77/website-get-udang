@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Get Udang </title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+	  <link rel="stylesheet" href="pesan.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/Logo1(1)(1).png">
+</head>
+<body>
+    <nav class="navbar navbar-color navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle Nav</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>                             
+            <a class="navbar-brand" href="#">
+              <img src="images/Logo1(2).png">
+            </a>
+          </div>
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right hover-huruf">
+          <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li class="active"><a href="pesan.html">Pesan</a></li>
+          <li><a href="about.html">about</a></li>
+          </ul>
+        </div>
+      </div>
+	  </nav>	
+
+
+<section class="pesan-section">
+  <div class="container">
+    <div class="row">
+
+		
+      <div class="col-md-8">
+        <div class="order-card">
+          <span class="section-label">Formulir Pemesanan</span>
+            <h2 class="section-title" style="font-size:30px;margin-bottom:8px;">Detail Pesanan Anda</h2>
+              <div class="section-divider"></div>
+                <p style="color:rgb(0, 0, 0);margin-bottom:32px;font-size:15px;">Lengkapi informasi di bawah ini dan tim kami akan segera mengkonfirmasi pesanan Anda.</p>
+
+            
+            <form action="pesan.php" method="get">
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                      </div>
+                  </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="telepon">Nomor Telepon / WA *</label>
+                          <input type="tel" class="form-control" id="telepon" placeholder="+62 8xx-xxxx-xxxx" required>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="email@contoh.com">
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="produk">Produk yang Dipesan *</label>
+                        <select class="form-control" id="produk" required>
+                          <option value="" disabled selected>-- Pilih Produk --</option>
+                          <option>Udang Vaname Segar</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="jumlah">Jumlah (kg) *</label>
+                        <input type="number" class="form-control" id="jumlah" placeholder="Contoh: 5" min="1" required>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <label for="alamat">Alamat Pengiriman *</label>
+                    <input type="text" class="form-control" id="alamat" placeholder="Jalan, kelurahan, kecamatan, kota" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tanggal">Tanggal Pengiriman Diinginkan</label>
+                    <input type="date" class="form-control" id="tanggal">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pesan">Catatan Tambahan</label>
+                    <textarea class="form-control" id="pesan" rows="4" placeholder="Contoh: tolong dikemas dalam styrofoam, dikirim sebelum jam 10 pagi..." style="resize:vertical;"></textarea>
+                  </div>
+
+                  <button class="tombol-order" data-toggle= "modal" data-target="#myModal">
+                      Kirim Pesanan Sekarang
+                  </button>
+
+                    
+
+                  <p style="text-align:center;color:gray;font-size:13px;margin-top:16px;">
+                      Anda juga dapat menghubungi kami langsung via WhatsApp untuk pemesanan cepat
+                  </p>
+                </div>
+              </div>
+            
+            </form>
+
+          </div>
+        </div>
+    </section>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            <h4 style="text-align: center;">Pesanan Telah Terkirim</h4><br>
+                            <div style="text-align: center;">
+                                <span style="align-items: center;" class="glyphicon glyphicon-ok hijau"></span>
+                            </div>
+                                    </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" style="background: #0d1e3f;" data-dismiss="modal">Tutup
+                            </button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+          
+                <div class="col-md-4" style="margin-top:8px;">
+                    <div class="footer-brand">GET UDANG</div>
+                    <p class="footer-desc">Supplier udang vaname segar berkualitas tinggi, langsung dari tambak  ke tangan Anda.</p>
+                </div>
+                        
+                <div class="col-md-2 col-xs-6" style="margin-top:8px;">
+                    <div class="footer-title"> Navigasi </div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="pesan.html">Pesan</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                    <div class="col-md-3 col-xs-6" style="margin-top:8px;">
+                        <div class="footer-title">
+                          Produk
+                        </div>
+                            <ul class="footer-links">
+                                <li><a href="produk.html"><span class="glyphicon glyphicon-shopping-cart"></span> Vaname Segar</a></li>
+                            </ul>
+                    </div>
+                
+            
+                <div class="col-md-3 col-xs-6" style="margin-top:8px;">
+                    <div class="footer-title">Kontak</div>
+                      <div class="footer-contact-item">
+                          <span class="glyphicon glyphicon-home"></span>
+                          <span>Merbau, Pantai Gading, Secangang, Langkat ,Sumatera Utara</span>
+                      </div>
+                      
+                    <div class="footer-contact-item">
+                          <span class="glyphicon glyphicon-earphone"></span>
+                          <span>+62 812-6556-9642</span>
+                    </div>
+                </div>                  
+
+          </div>
+            
+            
+            <div class="footer-bottom">
+                <span>© 2026 Get Udang. Semua hak dilindungi.</span>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
